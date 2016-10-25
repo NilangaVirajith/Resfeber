@@ -16,7 +16,10 @@ angular.module('starter.controllers', [])
       'z-index': '2',
     };
 
-    $scope.hello = function () {
+    $scope.hello = function (event) {
+
+      alert(event.currentTarget.id);
+
       $scope.style1 = {
         'position': 'absolute',
         'left': '0px',
